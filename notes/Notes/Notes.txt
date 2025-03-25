@@ -9,6 +9,4 @@ This includes both the written and video versions.
 
 To Add:
 power ups
-menu buttons - play, help, quit
-menu music
-death screen with play again and exit buttons with death music
+titles not working (death and title)

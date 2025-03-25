@@ -16,3 +16,9 @@ room_goto(rm_game);
 /// @DnDArgument : "soundid" "snd_menu_music"
 /// @DnDSaveInfo : "soundid" "snd_menu_music"
 audio_stop_sound(snd_menu_music);
+
+/// @DnDAction : YoYo Games.Instances.Destroy_Instance
+/// @DnDVersion : 1
+/// @DnDHash : 645DD696
+/// @DnDApplyTo : {obj_title}
+with(obj_title) instance_destroy();
