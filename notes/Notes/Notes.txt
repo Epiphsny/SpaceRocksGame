@@ -1,0 +1,14 @@
+Welcome to Space Rocks!
+
+Access the main tutorial from here:
+https://gamemaker.io/en/tutorials/make-arcade-space-shooter
+
+This includes both the written and video versions.
+
+------------------------------------------------------------
+
+To Add:
+power ups
+menu buttons - play, help, quit
+menu music
+death screen with play again and exit buttons with death music
