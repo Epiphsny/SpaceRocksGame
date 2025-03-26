@@ -1,14 +1,14 @@
 /// @DnDAction : YoYo Games.Drawing.Draw_Self
 /// @DnDVersion : 1
-/// @DnDHash : 73B2B527
+/// @DnDHash : 7CCEF4B5
 draw_self();
 
 /// @DnDAction : YoYo Games.Drawing.Set_Font
 /// @DnDVersion : 1
 /// @DnDHash : 7B5BC6CC
-/// @DnDArgument : "font" "fnt_menu"
-/// @DnDSaveInfo : "font" "fnt_menu"
-draw_set_font(fnt_menu);
+/// @DnDArgument : "font" "fnt_titles"
+/// @DnDSaveInfo : "font" "fnt_titles"
+draw_set_font(fnt_titles);
 
 /// @DnDAction : YoYo Games.Drawing.Set_Alignment
 /// @DnDVersion : 1.1
@@ -21,10 +21,10 @@ draw_set_valign(fa_middle);
 /// @DnDAction : YoYo Games.Drawing.Draw_Value
 /// @DnDVersion : 1
 /// @DnDHash : 494D5028
-/// @DnDArgument : "x_relative" "1"
-/// @DnDArgument : "y_relative" "1"
+/// @DnDArgument : "x" "room_width/2"
+/// @DnDArgument : "y" "room_height - 850"
 /// @DnDArgument : "caption" ""Game Over!""
-draw_text(x + 0, y + 0, string("Game Over!") + "");
+draw_text(room_width/2, room_height - 850, string("Game Over!") + "");
 
 /// @DnDAction : YoYo Games.Drawing.Set_Alignment
 /// @DnDVersion : 1.1

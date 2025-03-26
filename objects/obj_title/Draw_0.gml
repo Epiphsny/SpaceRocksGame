@@ -1,14 +1,14 @@
 /// @DnDAction : YoYo Games.Drawing.Draw_Self
 /// @DnDVersion : 1
-/// @DnDHash : 1E3BC452
+/// @DnDHash : 760C41C6
 draw_self();
 
 /// @DnDAction : YoYo Games.Drawing.Set_Font
 /// @DnDVersion : 1
 /// @DnDHash : 6A22611A
-/// @DnDArgument : "font" "fnt_menu"
-/// @DnDSaveInfo : "font" "fnt_menu"
-draw_set_font(fnt_menu);
+/// @DnDArgument : "font" "fnt_titles"
+/// @DnDSaveInfo : "font" "fnt_titles"
+draw_set_font(fnt_titles);
 
 /// @DnDAction : YoYo Games.Drawing.Set_Alignment
 /// @DnDVersion : 1.1
@@ -21,10 +21,10 @@ draw_set_valign(fa_middle);
 /// @DnDAction : YoYo Games.Drawing.Draw_Value
 /// @DnDVersion : 1
 /// @DnDHash : 7E666845
-/// @DnDArgument : "x_relative" "1"
-/// @DnDArgument : "y_relative" "1"
+/// @DnDArgument : "x" "room_width/2"
+/// @DnDArgument : "y" "room_height - 900"
 /// @DnDArgument : "caption" ""Space Rocks""
-draw_text(x + 0, y + 0, string("Space Rocks") + "");
+draw_text(room_width/2, room_height - 900, string("Space Rocks") + "");
 
 /// @DnDAction : YoYo Games.Drawing.Set_Alignment
 /// @DnDVersion : 1.1

@@ -10,3 +10,4 @@ This includes both the written and video versions.
 To Add:
 power ups
 titles not working (death and title)
+game music
