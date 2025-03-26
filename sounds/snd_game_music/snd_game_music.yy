@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_shoot",
+  "%Name":"snd_game_music",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.679184,
-  "name":"snd_shoot",
+  "duration":71.75835,
+  "name":"snd_game_music",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_shoot.mp3",
+  "soundFile":"snd_game_music.mp3",
   "type":0,
-  "volume":0.7,
+  "volume":0.15,
 }
