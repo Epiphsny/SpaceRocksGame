@@ -15,22 +15,51 @@ effect_create_above(3, x + 0, y + 0, 1, $FFFFFF & $ffffff);
 /// @DnDSaveInfo : "soundid" "snd_player_explode"
 audio_play_sound(snd_player_explode, 0, 0, 1.0, undefined, 1.0);
 
-/// @DnDAction : YoYo Games.Instances.Destroy_Instance
+/// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
-/// @DnDHash : 6BB6519D
-instance_destroy();
+/// @DnDHash : 4311AB7D
+/// @DnDArgument : "var" "global.lives"
+/// @DnDArgument : "op" "2"
+if(global.lives > 0){	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 7B32B879
+	/// @DnDParent : 4311AB7D
+	/// @DnDArgument : "expr" "-1"
+	/// @DnDArgument : "expr_relative" "1"
+	/// @DnDArgument : "var" "global.lives"
+	global.lives += -1;
 
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
-/// @DnDHash : 1F5CCE08
-/// @DnDArgument : "expr" "obj_game.points"
-/// @DnDArgument : "expr_relative" "1"
-/// @DnDArgument : "var" "obj_game.total_points"
-obj_game.total_points += obj_game.points;
+	/// @DnDAction : YoYo Games.Movement.Jump_To_Start
+	/// @DnDVersion : 1
+	/// @DnDHash : 501ECEF1
+	/// @DnDParent : 4311AB7D
+	x = xstart;y = ystart;}
 
-/// @DnDAction : YoYo Games.Rooms.Go_To_Room
+/// @DnDAction : YoYo Games.Common.Else
 /// @DnDVersion : 1
-/// @DnDHash : 7EB33564
-/// @DnDArgument : "room" "rm_death"
-/// @DnDSaveInfo : "room" "rm_death"
-room_goto(rm_death);
+/// @DnDHash : 6E0CF27C
+else{	/// @DnDAction : YoYo Games.Instances.Destroy_Instance
+	/// @DnDVersion : 1
+	/// @DnDHash : 6BB6519D
+	/// @DnDParent : 6E0CF27C
+	instance_destroy();
+
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 1F5CCE08
+	/// @DnDInput : 2
+	/// @DnDParent : 6E0CF27C
+	/// @DnDArgument : "expr" "global.points"
+	/// @DnDArgument : "expr_relative" "1"
+	/// @DnDArgument : "var" "global.total_points"
+	/// @DnDArgument : "var_1" "global.points"
+	global.total_points += global.points;
+	global.points = 0;
+
+	/// @DnDAction : YoYo Games.Rooms.Go_To_Room
+	/// @DnDVersion : 1
+	/// @DnDHash : 7EB33564
+	/// @DnDParent : 6E0CF27C
+	/// @DnDArgument : "room" "rm_death"
+	/// @DnDSaveInfo : "room" "rm_death"
+	room_goto(rm_death);}

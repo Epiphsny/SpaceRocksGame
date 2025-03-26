@@ -34,6 +34,7 @@
   },
   "name":"Space Rocks",
   "resources":[
+    {"id":{"name":"fnt_game","path":"fonts/fnt_game/fnt_game.yy",},},
     {"id":{"name":"fnt_menu","path":"fonts/fnt_menu/fnt_menu.yy",},},
     {"id":{"name":"fnt_titles","path":"fonts/fnt_titles/fnt_titles.yy",},},
     {"id":{"name":"Notes","path":"notes/Notes/Notes.yy",},},

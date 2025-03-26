@@ -3,8 +3,8 @@
 /// @DnDHash : 18C875B8
 /// @DnDArgument : "expr" "50"
 /// @DnDArgument : "expr_relative" "1"
-/// @DnDArgument : "var" "obj_game.points"
-obj_game.points += 50;
+/// @DnDArgument : "var" "global.points"
+global.points += 50;
 
 /// @DnDAction : YoYo Games.Instances.Destroy_Instance
 /// @DnDVersion : 1
