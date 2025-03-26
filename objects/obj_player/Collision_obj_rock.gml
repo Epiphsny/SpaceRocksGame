@@ -20,6 +20,14 @@ audio_play_sound(snd_player_explode, 0, 0, 1.0, undefined, 1.0);
 /// @DnDHash : 6BB6519D
 instance_destroy();
 
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 1F5CCE08
+/// @DnDArgument : "expr" "obj_game.points"
+/// @DnDArgument : "expr_relative" "1"
+/// @DnDArgument : "var" "obj_game.total_points"
+obj_game.total_points += obj_game.points;
+
 /// @DnDAction : YoYo Games.Rooms.Go_To_Room
 /// @DnDVersion : 1
 /// @DnDHash : 7EB33564

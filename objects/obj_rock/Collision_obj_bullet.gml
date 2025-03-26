@@ -1,6 +1,6 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
-/// @DnDHash : 60251092
+/// @DnDHash : 18C875B8
 /// @DnDArgument : "expr" "50"
 /// @DnDArgument : "expr_relative" "1"
 /// @DnDArgument : "var" "obj_game.points"

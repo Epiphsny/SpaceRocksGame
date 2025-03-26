@@ -23,8 +23,8 @@ draw_set_valign(fa_middle);
 /// @DnDHash : 494D5028
 /// @DnDArgument : "x" "room_width/2"
 /// @DnDArgument : "y" "room_height - 850"
-/// @DnDArgument : "caption" ""Game Over!""
-draw_text(room_width/2, room_height - 850, string("Game Over!") + "");
+/// @DnDArgument : "caption" ""Game Over!\nTotal Points: ""
+draw_text(room_width/2, room_height - 850, string("Game Over!\nTotal Points: ") + "");
 
 /// @DnDAction : YoYo Games.Drawing.Set_Alignment
 /// @DnDVersion : 1.1
