@@ -3,8 +3,8 @@
   "%Name":"Notes",
   "name":"Notes",
   "parent":{
-    "name":"Space Rocks",
-    "path":"Space Rocks.yyp",
+    "name":"Notes",
+    "path":"folders/Notes.yy",
   },
   "resourceType":"GMNotes",
   "resourceVersion":"2.0",

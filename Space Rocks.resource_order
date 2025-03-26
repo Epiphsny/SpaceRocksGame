@@ -28,6 +28,7 @@
     {"name":"obj_title","order":9,"path":"objects/obj_title/obj_title.yy",},
     {"name":"rm_death","order":2,"path":"rooms/rm_death/rm_death.yy",},
     {"name":"rm_menu","order":1,"path":"rooms/rm_menu/rm_menu.yy",},
+    {"name":"snd_click","order":6,"path":"sounds/snd_click/snd_click.yy",},
     {"name":"snd_death","order":4,"path":"sounds/snd_death/snd_death.yy",},
     {"name":"snd_menu_music","order":5,"path":"sounds/snd_menu_music/snd_menu_music.yy",},
     {"name":"snd_player_explode","order":3,"path":"sounds/snd_player_explode/snd_player_explode.yy",},
